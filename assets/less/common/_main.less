@@ -5,7 +5,7 @@
 // LAYOUT: LAYOUT STYLE
 // -------------------------------------
 .site-header {
-	position: relative;
+
 }
 .site-footer {
 	font-size: 14px;
@@ -27,14 +27,275 @@
 }
 .menu{
 	min-height: 40px;
+	width: 100%;
+	background: rgba(52,152,210,1);
+	background: -moz-linear-gradient(top, rgba(52,152,210,1) 0%, rgba(6,105,162,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(52,152,210,1)), color-stop(100%, rgba(6,105,162,1)));
+	background: -webkit-linear-gradient(top, rgba(52,152,210,1) 0%, rgba(6,105,162,1) 100%);
+	background: -o-linear-gradient(top, rgba(52,152,210,1) 0%, rgba(6,105,162,1) 100%);
+	background: -ms-linear-gradient(top, rgba(52,152,210,1) 0%, rgba(6,105,162,1) 100%);
+	background: linear-gradient(to bottom, rgba(52,152,210,1) 0%, rgba(6,105,162,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3498d2', endColorstr='#0669a2', GradientType=0 );
+	.navbar{
+		border-radius: 0;
+		min-height: auto;
+	}
+	.navbar-inverse{
+		background-color: transparent;
+		border:0;
+	}
 }
+.navbar-inverse .navbar-nav > li > a{
+	color:#fff;
+	padding-bottom: 15px;
+	padding-top:15px;
+	text-transform: uppercase;
+	border-right:1px solid #054d75 ;
+	border-left:1px solid #0f9ef0 ;
+	&.active,&.hover,&.focus{
+		background-color: #3499d2
+	}
+}
+.navbar-inverse .navbar-nav > li:last-child > a{
+	border-right:0;
+	
+}
+
+
 // MODULE: MODULE STYLE
 // -------------------------------------
+.list-service{
+	list-style: none;
+    padding-left: 0;
+    margin: 0;
+    >li{
+    	position: relative;
+    }
+	.circle{
+		border: 2px solid #fff;
+	    border-radius: 100%;
+	    display: inline-block;
+	    line-height: 0;
+	    position: relative;
+	    >li{
+	    	position: relative;
+	    }
+	    .fa{
+	    	    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    font-size:45px;
+			    -webkit-transform: translate(-50%, -50%);
+			    -ms-transform: translate(-50%, -50%);
+			    -o-transform: translate(-50%, -50%);
+			    transform: translate(-50%, -50%);
+			    color: @secondary-color;
+	    }
+	}
+	h2{
+		display: inline-block;
+		position: absolute;
+		top:24px;
+		left: 170px;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600
+	}
+}
+.width-130{
+	.square(130px);
+}
+// MODULE: OUR -STUDY
+// -------------------------------------
+.study-box {
+    background-color: #fff;
+    color: #666;
+	.img{
+		position: relative;
+		.date{
+			position: absolute;
+			display: block;
+			bottom: 10px;
+			left: 5px;
+			padding:10px;
+			background-color: rgba(255,0,0,0.6);
+			span{
+				color:#fff
+			}
+		}
+	}
+	.info{
+		text-align: left;
+		margin:5px 0;
+		h2{
+			font-size: 14px;
+			font-weight: 600;
+			color:#333;
+		}
+		p{
+			font-weight: 300;
+			color:#666;
+			font-size: 14px;
+		}
+	}
+}
+.title-top{
+	border-bottom: 1px solid @primary-color;
+	min-height: 25px;
+	position: relative;
+	margin-bottom: 10px;
+	h3{
+		position: absolute;
+		display: block;
+		bottom: 0;
+		left: 0;
+		min-height: 25px;
+		border-bottom: 3px solid @secondary-color;
+		margin:0;
+		padding:0;
+		text-transform: uppercase;;
+		color:@primary-color;
+	}
+}
+.swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
 
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color:#000;
+        opacity: 1;
+        background: rgba(0,0,0,0.2);
+    }
+    .swiper-pagination-bullet-active {
+        color:#000;
+        background: #007aff;
+    }
+    .swiper-button-next, .swiper-button-prev{
+    	background-image: none !important;
+    }
+.box-new-home{
+    	margin-bottom: 10px;
+    	ul{
+    		>li{
+    			list-style: none;
+    			&:extend(.clearfix all);
+    			>a.img{
+    				float:left;
+    				margin-right: 10px;
+    				display: block;
+    				img{
+    					max-width: 80px;
+    				}
+    			}
+    			.desc{
+			    	overflow: hidden;
+			    	max-height: 50px;
+				}
+    		}
+    	}
+}
+.describe{
+	overflow: hidden;
+	h4{
+		font-weight: 600;
+		font-size: 14px;
+	}
+	.desc{
+    	overflow: hidden;
+    	text-align: justify;
+    	font-size: 13px;
+	}
+}
 
-/*=====  End of ABOUT US PAGE  ======*/
+.clearfix{
+    	&:before, &.after{
+    		clear: both;
+    		content: "";
+    		height: 0;
+    		display: table;
+    	}
+    }
+.box-recruitment{
+	.box-recruitment-hot{
 
+	}
+	.recruitment-hot-next{
 
-/*====================================
-=            CONTACT PAGE            =
-====================================*/
+		li{
+			&:extend(.clearfix all);
+			list-style: none;
+			margin: 10px 0;
+			>a.img{
+				float:left;
+    			margin-right: 10px;
+    			display: block;
+    			img{
+    				max-width: 110px;
+    			}
+			}
+		}
+	}
+	.recruitment-other{
+		li{
+			list-style: none;
+			margin: 10px 0;
+		}
+	}
+}
+.box-imageactive{
+	.box-list-image{
+		a.imgactive{
+			display: block;
+			position: relative;
+			width: 100%;
+			.name-album{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(13,80,156,0.8);
+				width: 100%;
+				padding-left: 5px;
+				padding-right: 5px;
+				max-height: 250px;
+				h3{
+					color: #fff;
+					font-size: 14px;
+					text-transform: uppercase;
+					text-align: center;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					max-height: 35px;
+				}
+
+			}
+			img{
+				max-width: 100%
+			}
+		}
+	}
+}
