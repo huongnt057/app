@@ -67,6 +67,21 @@
 	}
 // Only for Small devices and lower (<767px)
 @media (max-width: @screen-xs-max) {
+	.info-search, .search, .hotline{
+		position: static !important;
+		min-height: auto !important;
+		width: 100%  !important;
+	}
+	.name-company{
+		display: none;
+	}
+	.content-detail{
+		img, table, iframe{
+			max-width: 98%;
+			height: 100%;
+			margin:0 auto;
+		}
+	}
 	
 	// Hook Mixin Render: Only for Small devices and lower (<767px)
 		.hook-screen-xs-max;

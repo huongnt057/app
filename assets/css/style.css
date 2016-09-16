@@ -1071,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
   color: #666;
@@ -1086,12 +1086,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #f5e60e;
+  color: #3499d2;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #afa407;
+  color: #226d98;
   text-decoration: underline;
 }
 a:focus {
@@ -3385,7 +3385,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-link {
-  color: #f5e60e;
+  color: #3499d2;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3406,7 +3406,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #afa407;
+  color: #226d98;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3986,7 +3986,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #f5e60e;
+  border-color: #3499d2;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4705,7 +4705,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #f5e60e;
+  color: #3499d2;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -4726,7 +4726,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #afa407;
+  color: #226d98;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -4924,7 +4924,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #f5e60e;
+  color: #3499d2;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -4999,7 +4999,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #f5e60e;
+  border-color: #3499d2;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -5221,22 +5221,16 @@ a.thumbnail.active {
   position: relative;
   display: block;
   padding: 10px 15px;
-  margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid #ddd;
-}
-.list-group-item:first-child {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-bottom: 1px solid #ddd;
 }
 .list-group-item:last-child {
   margin-bottom: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
 }
 a.list-group-item,
 button.list-group-item {
   color: #555;
+  text-transform: uppercase;
 }
 a.list-group-item .list-group-item-heading,
 button.list-group-item .list-group-item-heading {
@@ -5962,7 +5956,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6080,7 +6074,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -9026,16 +9020,16 @@ This must be run when you have at least 2 sprites.
 .sprites(@spritesheet-sprites);
 */
 @font-face {
-  font-family: 'goquoicon';
-  src: url('../fonts//goquoicon.eot?muejn6');
-  src: url('../fonts//goquoicon.eot?muejn6#iefix') format('embedded-opentype'), url('../fonts//goquoicon.ttf?muejn6') format('truetype'), url('../fonts//goquoicon.woff?muejn6') format('woff'), url('../fonts//goquoicon.svg?muejn6#goquoicon') format('svg');
+  font-family: 'icon-study';
+  src: url('../fonts//icon-study.eot?jad7rb');
+  src: url('../fonts//icon-study.eot?jad7rb#iefix') format('embedded-opentype'), url('../fonts//icon-study.ttf?jad7rb') format('truetype'), url('../fonts//icon-study.woff?jad7rb') format('woff'), url('../fonts//icon-study.svg?jad7rb#icon-study') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'goquoicon' !important;
+  font-family: 'icon-study' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -9046,6 +9040,18 @@ This must be run when you have at least 2 sprites.
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-graduation-hat-and-diploma:before {
+  content: "\e900";
+}
+.icon-group:before {
+  content: "\e901";
+}
+.icon-telephone:before {
+  content: "\e902";
+}
+.icon-airplane-flying-around-earth-grid:before {
+  content: "\e903";
+}
 body {
   overflow-x: hidden;
   font-weight: 400;
@@ -9053,7 +9059,15 @@ body {
 }
 #our-service {
   background-color: #3499d2;
-  display: none;
+}
+.comment {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+.page-images {
+  background-color: #f2f2f2;
+  padding: 20px 0;
 }
 ul {
   margin: 0;
@@ -9063,13 +9077,17 @@ h3,
 h2 {
   font-size: 14px;
 }
+.site-header {
+  min-height: 100px;
+  background-color: #fff;
+}
 .site-footer {
   font-size: 14px;
-  background-color: #112a40;
+  background-color: #0d509c;
 }
 .site-footer,
 .site-footer a {
-  color: #637383;
+  color: #fff;
 }
 .site-footer a:hover {
   color: #f5e60e;
@@ -9078,10 +9096,79 @@ h2 {
 .site-footer a:focus {
   text-decoration: none;
 }
-.top-wrap {
+.site-footer .copyright {
+  background-color: #3499d2;
+  text-align: center;
+  padding: 10px 0;
+}
+.logo {
+  width: 100%;
+}
+.info-search {
   position: relative;
-  min-height: 200px;
+  min-height: 100px;
+  width: 100%;
+}
+.info-search .name-company {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 100%;
+  min-height: 80px;
+}
+.info-search .search {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  width: 300px;
+  height: 40px;
+}
+.info-search .search .navbar-form {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+}
+.info-search .search .form-search {
   background-color: #fff;
+  border: 1px solid #3499d2;
+  position: relative;
+  border-radius: 4px;
+  height: 30px;
+}
+.info-search .search .form-search .form-control {
+  border: 0;
+  border-radius: 0;
+  height: 27px;
+  padding: 0 15px;
+}
+.info-search .search .form-search > a {
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  background-color: #3499d2;
+  border-radius: 0 2px 2px 0;
+  width: 40px;
+  height: 29px;
+  text-align: center;
+}
+.info-search .search .form-search > a i {
+  line-height: 29px;
+}
+.info-search .hotline {
+  position: absolute;
+  right: 305px;
+  bottom: 0;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.info-search .hotline span {
+  display: inline-block;
+}
+.info-search .hotline span .fa {
+  display: inline-block;
 }
 .menu {
   min-height: 40px;
@@ -9123,6 +9210,7 @@ h2 {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  padding: 10px 0;
 }
 .list-service > li {
   position: relative;
@@ -9137,7 +9225,7 @@ h2 {
 .list-service .circle > li {
   position: relative;
 }
-.list-service .circle .fa {
+.list-service .circle .icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9158,9 +9246,9 @@ h2 {
   text-align: center;
   font-weight: 600;
 }
-.width-130 {
-  width: 130px;
-  height: 130px;
+.width-120 {
+  width: 120px;
+  height: 120px;
 }
 .study-box {
   background-color: #fff;
@@ -9251,7 +9339,18 @@ h2 {
 .swiper-button-next,
 .swiper-button-prev {
   background-image: none !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 27px;
+  color: #fff;
+  text-align: center;
 }
+.swiper-button-next .fa,
+.swiper-button-prev .fa {
+  margin-top: 6px;
+}
+/*=============================================
+    =            NEW HOME RIGHT            =
+    =============================================*/
 .box-new-home {
   margin-bottom: 10px;
 }
@@ -9281,6 +9380,31 @@ h2 {
   overflow: hidden;
   text-align: justify;
   font-size: 13px;
+}
+.box-select-country {
+  background-color: #ddd;
+  padding-bottom: 25px;
+}
+.box-select-country .title-box-select {
+  background-color: #3499d2;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.box-select-country .list-select {
+  margin: 0;
+  list-style: none;
+}
+.box-select-country .list-select > li a {
+  display: block;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  max-width: 150px;
+}
+.box-select-country .list-select > li a img {
+  max-width: 150px;
 }
 .clearfix:before,
 .clearfix.after,
@@ -9323,6 +9447,9 @@ h2 {
   height: 0;
   display: table;
 }
+/*=============================================
+    =            RECUIMENT HOME             =
+    =============================================*/
 .box-recruitment .recruitment-hot-next li {
   list-style: none;
   margin: 10px 0;
@@ -9348,7 +9475,7 @@ h2 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(13, 80, 156, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   padding-left: 5px;
   padding-right: 5px;
@@ -9365,6 +9492,43 @@ h2 {
 }
 .box-imageactive .box-list-image a.imgactive img {
   max-width: 100%;
+}
+/*=============================================
+=            Section comment             =
+=============================================*/
+.box-comment h3 {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3499d2;
+}
+.box-comment .imgcomment {
+  width: 100%;
+}
+.box-comment .imgcomment img {
+  max-width: 100%;
+}
+/*=============================================
+=            page images            =
+=============================================*/
+.post-photo .photo {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  position: relative;
+  -border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: .8em;
+  padding: 10px;
+}
+.post-photo .photo img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .clear {
   clear: both;
@@ -10118,6 +10282,23 @@ h2 {
   }
 }
 @media (max-width: 767px) {
+  .info-search,
+  .search,
+  .hotline {
+    position: static !important;
+    min-height: auto !important;
+    width: 100%  !important;
+  }
+  .name-company {
+    display: none;
+  }
+  .content-detail img,
+  .content-detail table,
+  .content-detail iframe {
+    max-width: 98%;
+    height: 100%;
+    margin: 0 auto;
+  }
   .inline-max-sm {
     display: inline !important;
   }

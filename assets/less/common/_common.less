@@ -1,21 +1,17 @@
-// --------------------------------------------------
-// COMMONS STYLE
-// --------------------------------------------------
-//
 @font-face {
-  font-family: 'goquoicon';
-  src:  url('@{icon-font-path}/goquoicon.eot?muejn6');
-  src:  url('@{icon-font-path}/goquoicon.eot?muejn6#iefix') format('embedded-opentype'),
-    url('@{icon-font-path}/goquoicon.ttf?muejn6') format('truetype'),
-    url('@{icon-font-path}/goquoicon.woff?muejn6') format('woff'),
-    url('@{icon-font-path}/goquoicon.svg?muejn6#goquoicon') format('svg');
+  font-family: 'icon-study';
+  src:  url('@{icon-font-path}/icon-study.eot?jad7rb');
+  src:  url('@{icon-font-path}/icon-study.eot?jad7rb#iefix') format('embedded-opentype'),
+    url('@{icon-font-path}/icon-study.ttf?jad7rb') format('truetype'),
+    url('@{icon-font-path}/icon-study.woff?jad7rb') format('woff'),
+    url('@{icon-font-path}/icon-study.svg?jad7rb#icon-study') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'goquoicon' !important;
+  font-family: 'icon-study' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -28,6 +24,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-graduation-hat-and-diploma:before {
+  content: "\e900";
+}
+.icon-group:before {
+  content: "\e901";
+}
+.icon-telephone:before {
+  content: "\e902";
+}
+.icon-airplane-flying-around-earth-grid:before {
+  content: "\e903";
+}
+
 body {
 	overflow-x: hidden;
 	font-weight: 400;
@@ -35,7 +44,16 @@ body {
 }
 #our-service{
   background-color: @primary-color;
-  display: none;
+ 
+}
+.comment{
+  background-color: #f2f2f2;
+  padding:20px 0;
+  margin:20px 0;
+}
+.page-images{
+   background-color: #f2f2f2;
+  padding:20px 0;
 }
 ul{
   margin:0;
