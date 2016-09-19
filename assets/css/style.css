@@ -9184,6 +9184,7 @@ h2 {
 }
 .info-search .search .form-search > a i {
   line-height: 29px;
+  color: #fff;
 }
 .info-search .hotline {
   position: absolute;
@@ -9337,6 +9338,7 @@ h2 {
   font-size: 12px;
 }
 .title-top {
+  margin-top: 10px;
   border-bottom: 1px solid #3499d2;
   min-height: 25px;
   position: relative;
@@ -9466,24 +9468,39 @@ h2 {
   margin: 5px;
 }
 .box-select-country .list-select {
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
+  width: 95%;
 }
-.box-select-country .list-select > li a {
-  margin: 10px auto;
+.box-select-country .list-select > li {
+  padding: 10px 0;
+}
+.box-select-country .list-select > li .img-country {
+  margin: 2px auto;
   background-color: #fff;
   border: 1px solid #ddd;
   text-align: center;
   max-width: 100px;
   float: left;
   display: block;
+  margin-right: 10px;
 }
-.box-select-country .list-select > li a img {
+.box-select-country .list-select > li .img-country img {
   max-width: 100px;
   height: 70px;
 }
-.box-select-country .list-select > li .describe a {
-  background-color: transparent;
+.box-select-country .list-select > li .describe-country h4 {
+  font-size: 14px;
+  margin-bottom: 2px;
+  text-transform: uppercase !important;
+  color: #333 !important;
+}
+.box-select-country .list-select > li .describe-country h4 a {
+  color: #333 !important;
+}
+.box-select-country .list-select > li .describe-country p {
+  font-size: 13px;
+  line-height: 18px;
 }
 .clearfix:before,
 .clearfix.after,
@@ -9559,6 +9576,11 @@ h2 {
   font-size: 13px;
   color: #c91218;
 }
+.box-recruitment .recruitment-other li i {
+  font-size: 12px;
+  color: #c91218;
+  margin-right: 5px;
+}
 .box-imageactive .box-list-image a.imgactive {
   display: block;
   position: relative;
@@ -9627,6 +9649,43 @@ h2 {
 .post-photo .photo img {
   max-width: 100%;
   max-height: 100%;
+}
+/*=============================================
+=            Catogery            =
+=============================================*/
+.post-item h4 {
+  text-transform: uppercase;
+}
+.post-item p {
+  font-size: 14px;
+  line-height: 18px;
+}
+h2.title-detail {
+  text-transform: uppercase;
+  color: red;
+  font-size: 16px;
+  font-weight: 600;
+}
+p.date {
+  color: #666;
+  font-style: italic;
+  font-size: 13px;
+}
+.new-other {
+  margin: 20px 0;
+}
+.new-other ul {
+  list-style: none;
+}
+.new-other ul li i {
+  margin-right: 5px;
+  color: #3499d2;
+}
+.content-detail img,
+.content-detail table,
+.content-detail iframe {
+  max-width: 100%;
+  height: 100%;
 }
 .clear {
   clear: both;
@@ -10395,6 +10454,19 @@ h2 {
   .content-detail iframe {
     max-width: 98%;
     height: 100%;
+    margin: 0 auto;
+  }
+  .col-md-logo,
+  .col-md-info,
+  .info-search,
+  .hotline {
+    float: none !important;
+    width: 100% !important;
+    text-align: center;
+    position: static;
+  }
+  .search {
+    width: 95% !important;
     margin: 0 auto;
   }
   .inline-max-sm {

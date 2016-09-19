@@ -97,6 +97,7 @@
 					text-align: center;
 					i{
 						line-height: 29px;
+						color:#fff;
 					}
 				}
 		}
@@ -256,6 +257,7 @@
 	}
 }
 .title-top{
+	margin-top: 10px;
 	border-bottom: 1px solid @primary-color;
 	min-height: 25px;
 	position: relative;
@@ -385,29 +387,42 @@
 		}
 	}
 	.list-select{
-		margin:0;
+		margin:0 auto;
 		list-style: none;
+		width: 95%;
 		>li{
+			padding: 10px 0;
 			&:extend(.clearfix all);
-			a{
-				margin: 10px auto;
+			.img-country{
+				margin: 2px auto;
 				background-color: #fff;
 				border:1px solid #ddd;
 				text-align: center;
 				max-width: 100px;
 				float: left;
 				display: block;
+				margin-right: 10px;
 				img{
 					max-width: 100px;
 					height: 70px;
-
+					
 				}
 			}
 			.describe-country{
-				a{
-					background-color: transparent;
+				h4{
+					font-size: 14px;
+					margin-bottom:2px;
+					text-transform: uppercase !important;
+					color:#333 !important;
+					a{
+						color:#333 !important;
+					}
 				}
-				h4
+				p{
+					font-size: 13px;
+					line-height: 18px;
+				}
+			
 			}
 		}
 	}
@@ -457,6 +472,11 @@
 			a{
 				font-size: 13px;
 				color:#c91218;
+			}
+			i{
+				font-size: 12px;
+				color:#c91218;
+				margin-right: 5px;
 			}
 		}
 	}
@@ -540,5 +560,46 @@
 	    	max-width: 100%;
 	    	max-height: 100%;
 	    }
+	}
+}
+/*=============================================
+=            Catogery            =
+=============================================*/
+.post-item{
+	h4{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+h2.title-detail{
+	text-transform: uppercase;
+	color:red;
+	font-size: 16px;
+	font-weight: 600;
+}
+p.date{
+	color:#666;
+	font-style: italic;
+	font-size: 13px;
+}
+.new-other{
+	margin:20px 0;
+	ul{
+		list-style: none;
+		li{
+			i{
+				margin-right: 5px;
+				color:@primary-color;
+			}
+		}
+	}
+}
+.content-detail{
+	img, table, iframe{
+		max-width: 100%;
+		height: 100%
 	}
 }
