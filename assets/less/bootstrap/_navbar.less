@@ -24,7 +24,7 @@
 
 
 // Navbar heading
-//
+//.navbar-toggle
 // Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
 // styling of responsive aspects.
 
@@ -199,7 +199,6 @@
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
-  border-radius: @border-radius-base;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
   // styles to `:focus`.
@@ -573,10 +572,8 @@
 
   // Darken the responsive nav toggle
   .navbar-toggle {
-    border-color: @navbar-inverse-toggle-border-color;
     &:hover,
     &:focus {
-      background-color: @navbar-inverse-toggle-hover-bg;
     }
     .icon-bar {
       background-color: @navbar-inverse-toggle-icon-bar-bg;
@@ -594,7 +591,6 @@
       &,
       &:hover,
       &:focus {
-        background-color: @navbar-inverse-link-active-bg;
         color: @navbar-inverse-link-active-color;
       }
     }
